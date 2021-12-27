@@ -1,0 +1,57 @@
+.title {
+    display: flex;
+    margin: 15px auto;
+    width: 91vw;   
+
+    @include desktop {
+        width: 95vw;
+    }
+
+    .title_title {
+        width: 80%;       
+        
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .title_title-anch {            
+            height: 50px;
+            display: flex;
+            align-items: center;
+
+            a {
+                margin-right: 8px;
+                color: black;
+                border: 1px solid lightgrey;
+                padding: 8px;
+                text-decoration: none;
+                font-size: 16px;
+
+                &:hover {
+                    background: black;
+                    color: white;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+
+    .title_arrow {
+        display: flex;
+        width: 20%;        
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        img {
+            width: 23px;
+            margin-left: 15px;
+        }
+    }
+}

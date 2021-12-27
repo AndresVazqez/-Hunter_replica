@@ -1,0 +1,103 @@
+.hero2 {
+    width: 99vw;
+    height: 400px;    
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include desktop {
+        height: 100vh;
+    }
+
+    .hero2_absolute {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 320px;
+        height: 150px;
+        background: rgba(171, 19, 16, 0.6);        
+        top: 180px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        @include desktop {
+            width: 520px;
+            height: 220px;
+            top: 0px;
+        }
+
+        h4 {
+            color: white;
+            text-align: center;
+            font-size: 19px;
+            margin: 15px;
+            font-weight: 600;
+            margin-bottom: 20px;
+
+            @include desktop {
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                margin: 15px;
+                font-weight: 600;
+            }
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            font-size: 14px;
+
+            @include desktop {
+                color: white;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+
+        .hero2_absolute-anch {
+            margin: 40px;           
+            
+            a {
+                color: white;
+                font-weight: 600;
+                margin: 0 20px;                
+            }           
+        }
+    }
+
+    .hero2_img-1 {
+        width: 100%;
+        height: 100%;        
+
+        @include desktop {
+            width: 50%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .hero2_img-2 {
+        width: 0%;
+        height: 0%;        
+        
+        @include desktop {
+            width: 50%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

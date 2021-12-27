@@ -39,6 +39,7 @@
 .header {
   width: 100%;
   height: 160px;
+  margin-bottom: 8px;
 }
 
 .header .header_info {
@@ -230,6 +231,8 @@
           justify-content: center;
   height: 25px;
   width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .header .header_prom a {
@@ -237,6 +240,414 @@
   text-align: center;
   color: black;
   margin: 4px;
+  line-height: 1.2em;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #ad1210), color-stop(10%, #CA0A20), color-stop(30%, #E61338), color-stop(20%, #CA0A20), color-stop(20%, #ad1210));
+  background: linear-gradient(to right, #ad1210 20%, #CA0A20 10% 38.5%, #E61338 30% 62.5%, #CA0A20 20% 80.3%, #ad1210 20%);
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+.hero .hero_title {
+  color: white;
+  text-align: center;
+}
+
+.hero .hero_title h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.hero .hero_title p {
+  font-size: 20px;
+}
+
+.hero .hero_anch {
+  margin-top: 50px;
+}
+
+.hero .hero_anch a {
+  margin: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero .hero_anch a {
+    margin: 80px;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px auto;
+  width: 91vw;
+}
+
+@media only screen and (min-width: 992px) {
+  .title {
+    width: 95vw;
+  }
+}
+
+.title .title_title {
+  width: 80%;
+}
+
+.title .title_title h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.title .title_title p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.title .title_title .title_title-anch {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title .title_title .title_title-anch a {
+  margin-right: 8px;
+  color: black;
+  border: 1px solid lightgrey;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.title .title_title .title_title-anch a:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.title .title_arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.title .title_arrow img {
+  width: 23px;
+  margin-left: 15px;
+}
+
+.gallery {
+  width: 91vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 992px) {
+  .gallery {
+    width: 95vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.gallery .gallery_products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .gallery .gallery_products {
+    margin-bottom: 0px;
+    width: 24.6%;
+    min-width: 400px;
+    height: 650px;
+  }
+}
+
+.gallery .gallery_products .gallery_products-img-1 {
+  width: 100%;
+  height: 86%;
+  background-image: url(../images/Manoplas1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .gallery_products .gallery_products-img-1:hover {
+  background-image: url(../images/Manoplas2.webp);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-position: center;
+}
+
+.gallery .gallery_products .gallery_products-img-2 {
+  width: 100%;
+  height: 86%;
+  background-image: url(../images/Chaqueta1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .gallery_products .gallery_products-img-2:hover {
+  background-image: url(../images/Chaqueta2.webp);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-position: center;
+}
+
+.gallery .gallery_products .gallery_products-img-3 {
+  width: 100%;
+  height: 86%;
+  background-image: url(../images/Mochila1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .gallery_products .gallery_products-img-3:hover {
+  background-image: url(../images/Mochila2.webp);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-position: center;
+}
+
+.gallery .gallery_products .gallery_products-img-4 {
+  width: 100%;
+  height: 86%;
+  background-image: url(../images/Botas1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .gallery_products .gallery_products-img-4:hover {
+  background-image: url(../images/Botas2.webp);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-position: center;
+}
+
+.gallery .gallery_products h4 {
+  font-weight: 600;
+  line-height: 1.6rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.gallery .gallery_products p {
+  margin-top: 0px;
+}
+
+.hero2 {
+  width: 99vw;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero2 {
+    height: 100vh;
+  }
+}
+
+.hero2 .hero2_absolute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 320px;
+  height: 150px;
+  background: rgba(171, 19, 16, 0.6);
+  top: 180px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero2 .hero2_absolute {
+    width: 520px;
+    height: 220px;
+    top: 0px;
+  }
+}
+
+.hero2 .hero2_absolute h4 {
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  margin: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero2 .hero2_absolute h4 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px;
+    font-weight: 600;
+  }
+}
+
+.hero2 .hero2_absolute p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero2 .hero2_absolute p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+.hero2 .hero2_absolute .hero2_absolute-anch {
+  margin: 40px;
+}
+
+.hero2 .hero2_absolute .hero2_absolute-anch a {
+  color: white;
+  font-weight: 600;
+  margin: 0 20px;
+}
+
+.hero2 .hero2_img-1 {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero2 .hero2_img-1 {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.hero2 .hero2_img-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero2 .hero2_img-2 {
+  width: 0%;
+  height: 0%;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero2 .hero2_img-2 {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.hero2 .hero2_img-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero3 {
+  width: 100vw;
+  height: 70vh;
+  background: rosybrown;
+}
+
+.hero3 .hero3_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+  height: 100%;
+  background: royalblue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 19px;
+}
+
+.hero3 .hero3_title h4 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.hero3 .hero3_title p {
+  font-size: 18px;
 }
 
 /* Load google's Roboto font*/
