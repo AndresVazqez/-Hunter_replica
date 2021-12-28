@@ -615,9 +615,25 @@
 }
 
 .hero3 {
-  width: 100vw;
-  height: 70vh;
-  background: rosybrown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  width: 99vw;
+  height: 95vh;
+  margin: 50px auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero3 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .hero3 .hero3_title {
@@ -628,26 +644,284 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25%;
-  height: 100%;
-  background: royalblue;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+  height: 35%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  padding: 19px;
+  text-align: left;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero3 .hero3_title {
+    width: 25%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 19px;
+  }
 }
 
 .hero3 .hero3_title h4 {
   font-size: 22px;
   font-weight: 600;
+  margin-top: 0px;
 }
 
 .hero3 .hero3_title p {
   font-size: 18px;
+  line-height: 1.5rem;
+}
+
+.hero3 .hero3_title a {
+  font-size: 14px;
+  margin: 20px 0;
+  color: black;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero3 .hero3_title a {
+    text-align: center;
+    margin: 30px;
+  }
+}
+
+.hero3 .hero3_img {
+  width: 100%;
+  height: 65%;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero3 .hero3_img {
+    width: 75%;
+    height: 100%;
+  }
+}
+
+.hero3 .hero3_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 99vw;
+  height: 155vh;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .gallery2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
+  }
+}
+
+.gallery2 .gallery2_item {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+  .gallery2 .gallery2_item {
+    width: 49.6%;
+  }
+}
+
+.gallery2 .gallery2_item img {
+  width: 100%;
+  height: 67%;
+}
+
+@media only screen and (min-width: 992px) {
+  .gallery2 .gallery2_item img {
+    height: 84%;
+  }
+}
+
+.gallery2 .gallery2_item h1 {
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  margin-right: 20px;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .gallery2 .gallery2_item h1 {
+    margin-left: 30px;
+    font-size: 36px;
+  }
+}
+
+.gallery2 .gallery2_item p {
+  margin-left: 20px;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 992px) {
+  .gallery2 .gallery2_item p {
+    margin-left: 30px;
+    font-size: 18px;
+  }
+}
+
+.gallery2 .gallery2_item a {
+  margin-left: 20px;
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 992px) {
+  .gallery2 .gallery2_item a {
+    font-size: 16px;
+    margin-left: 30px;
+  }
+}
+
+.hero4 {
+  width: 99vw;
+  height: 82vh;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero4 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 95vh;
+  }
+}
+
+.hero4 .hero4_img {
+  width: 100%;
+  height: 68%;
+  background: lightblue;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero4 .hero4_img {
+    width: 75%;
+    height: 100%;
+  }
+}
+
+.hero4 .hero4_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero4 .hero4_img img {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+
+.hero4 .hero4_title {
+  width: 100%;
+  height: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 19px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero4 .hero4_title {
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.hero4 .hero4_title h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero4 .hero4_title h1 {
+    text-align: center;
+  }
+}
+
+.hero4 .hero4_title p {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero4 .hero4_title p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+
+.hero4 .hero4_title a {
+  font-size: 14px;
+  margin-top: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 992px) {
+  .hero4 .hero4_title a {
+    text-align: center;
+    margin: 20px;
+  }
 }
 
 /* Load google's Roboto font*/

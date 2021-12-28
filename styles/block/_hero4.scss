@@ -1,0 +1,84 @@
+.hero4 {
+    width: 99vw;
+    height: 82vh;    
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+        height: 95vh;
+    }
+    
+    .hero4_img {
+        width: 100%;
+        height: 68%;
+        background: lightblue;        
+
+        @include desktop {
+            width: 75%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;                                   
+
+            @include desktop {
+                object-fit: fill;
+            }            
+        }
+    }
+
+    .hero4_title {
+        width: 100%;
+        height: 32%;
+        display: flex;
+        flex-direction: column;
+        padding: 19px;        
+        justify-content: flex-start;
+        text-align: left;               
+
+        @include desktop {
+            width: 25%;           
+            height: 100%;                        
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {            
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 0px;
+            
+            @include desktop {
+                text-align: center;                
+            }
+        }
+
+        p {            
+            font-size: 16px;
+            line-height: 1.5rem;            
+            
+            @include desktop {
+                text-align: center;
+                font-size: 18px;
+                margin: 10px;
+            }            
+        }
+
+        a {            
+            font-size: 14px;
+            margin-top: 20px;
+            color: black;
+            font-weight: 600;
+
+            @include desktop {
+                text-align: center;
+                margin: 20px;
+            }
+        }
+    }
+}
