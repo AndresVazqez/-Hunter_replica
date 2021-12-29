@@ -62,11 +62,12 @@
         .footer_info-1 {
             width: 100%;           
             padding: 20px;
-            border: 1px solid red;
+            border-bottom: 2px solid lightgray;
 
             @include desktop {
                 width: 20%;
-                height: 100%;                 
+                height: 100%;
+                border: none;                 
             }
 
             p {
@@ -102,76 +103,77 @@
             }            
         }        
     }
-
-    .footer_payments {
-        width: 100%;
-        height: 180px;
-        background: white;
-        display: flex;        
-        padding: 20px 20px;
-        flex-direction: column;
-        
-        @include desktop {
-            height: 120px;
-            flex-direction: row;
-            align-items: center;
-        }
     
-        p { 
-            display: flex;           
-            font-size: 12px;                                   
-            margin-right: 18px;
-            
-            @include desktop {
-                display: flex;                           
-                height: 100%;               
-                align-items: center;
-                flex-shrink: 0;
-                margin-right: 18px;
-            }
-                           
-        }
+}
 
-        .footer_payments-img {
-            display: flex;
-            align-items: center;
-            height: 100%;          
-            margin: 15px 0px;
-
-            @include desktop {                                                
-                width: 70%;                
-            }            
-
-            img {
-                width: 30px;            
-                margin: 8px;               
-            }
-
-            .apple {
-                width: 40px;
-            }
-
-            .paypal {
-                width: 40px;
-            }
-        }
+.footer_payments {
+    width: 99vw;
+    height: 180px;
+    background: white;
+    display: flex;        
+    padding: 20px 20px;
+    flex-direction: column;
+    
+    @include desktop {
+        height: 120px;
+        flex-direction: row;
+        align-items: center;
     }
 
-    .footer_copyright {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;       
-        padding: 5px;
+    p { 
+        display: flex;           
+        font-size: 12px;                                   
+        margin-right: 18px;
         
-        @include desktop {            
-            justify-content: flex-end;            
-            width: 30%;
-            height: 100%;            
-            padding: 20px;            
+        @include desktop {
+            display: flex;                           
+            height: 100%;               
+            align-items: center;
+            flex-shrink: 0;
+            margin-right: 18px;
+        }
+                       
+    }
+
+    .footer_payments-img {
+        display: flex;
+        align-items: center;
+        height: 100%;          
+        margin: 15px 0px;
+
+        @include desktop {                                                
+            width: 70%;                
+        }            
+
+        img {
+            width: 30px;            
+            margin: 8px;               
         }
 
-        span {
-            font-size: 11px;            
+        .apple {
+            width: 40px;
         }
+
+        .paypal {
+            width: 40px;
+        }
+    }
+}
+
+.footer_copyright {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;       
+    padding: 5px;
+    
+    @include desktop {            
+        justify-content: flex-end;            
+        width: 30%;
+        height: 100%;            
+        padding: 20px;            
+    }
+
+    span {
+        font-size: 11px;            
     }
 }

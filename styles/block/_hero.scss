@@ -5,9 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 170px;    
 
     @include desktop {
         height: 100vh;
+        margin-top: 155px;
     }
 
     .hero_title{
