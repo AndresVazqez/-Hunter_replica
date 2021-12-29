@@ -1,0 +1,51 @@
+.hero5 {
+    display: flex;    
+    position: relative;
+    width: 99vw;
+    height: 40vh;    
+    margin: 0px auto;    
+
+    @include desktop {
+        width: 99vw;
+        height: 110vh;
+        margin: 20px auto;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+        
+    
+    .hero5_anch {
+        display: flex;
+        flex-direction: column;
+        position: absolute;        
+        justify-content: center;
+        align-items: center;        
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40%;
+        height: 40%;
+        
+        a {            
+            text-align: center;
+            margin: 15px;
+            color: black;
+
+            h1 {
+                margin: 0;
+                color: black;
+                font-weight: 600;
+                text-shadow: 0.4px 0.4px white;
+                font-size: 22px;
+
+                @include desktop {                   
+                    font-size: 36px;
+                }
+            }
+        }        
+    }
+} 
