@@ -1,7 +1,28 @@
 .gallery4 {
     width: 91vw;   
+    margin: 20px auto;
+    height: 465px;
+    overflow-x: scroll;
+        @include desktop {
+            &::-webkit-scrollbar {
+                height: 5px;                
+            }
     
-    margin: 20px auto;    
+            &::-webkit-scrollbar-thumb {
+                height: 4px;                
+                background: lightgray;
+                border-radius: 50px;
+
+                &:hover {
+                    background: rgb(182, 182, 182);
+                }
+
+                &:active {
+                    background: rgb(121, 120, 120);
+                }
+            }            
+        }   
+               
 
     .gallery4_title {
         display: flex;
@@ -48,8 +69,8 @@
     }
     
     .gallery4_img {
-        display: flex;
-        overflow-x: scroll;         
+        display: flex;       
+                              
 
         img {
             width: 342px;

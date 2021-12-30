@@ -1,11 +1,12 @@
 .hero {
     background: linear-gradient(to right, #ad1210 20%, #CA0A20 10% 38.5%, #E61338 30% 62.5%, #CA0A20 20% 80.3%, #ad1210 20%);
-    width: 100%;
+    width: 99vw;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 170px;    
+    margin-top: 170px;
+    margin: 170px auto;    
 
     @include desktop {
         height: 100vh;
