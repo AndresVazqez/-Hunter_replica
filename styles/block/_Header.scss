@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 100;
     top: 0;
-    height: 170px;
+    //height: 170px;
     background: #000000;             
 
     .header_info {
@@ -171,16 +171,15 @@
                     display: flex;
                     align-items: center;
                     text-decoration: none;               
-                    color: black;
-                    font-size: 18px;
+                    color: #000000;
+                    font-size: calc(2px + 1vmax);
                     height: 100%;              
                     
                     
     
                     &:hover {                    
                         transition: 0.1s;
-                        border-bottom: 4px solid $primary-color;
-                        
+                        border-bottom: 4px solid $primary-color;                  
                         
     
                         @include desktop {
